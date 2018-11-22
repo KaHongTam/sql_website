@@ -1,0 +1,171 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* div's borders geven */
+div {
+    border-radius: 10px;
+}
+
+.container {
+    height:100vh;
+    width:100vw;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 5%  5% 300px 2fr 5%;
+    grid-template-rows: 300px 1fr;
+    background-image: url(images/background.png);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.sideborder_left {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: white;
+}
+
+.sideborder_right {
+    grid-column: 5/6;
+    grid-row: 1/3;
+    background-color: white;
+}
+
+.logo {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: #ff841fd8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    
+}
+
+.content {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: #5dc0b81a;
+    overflow: scroll;
+    padding: 20px;
+}
+
+.button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff841fd8;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    -webkit-transition: background-color 500ms ease;
+    -ms-transition: background-color 500ms ease;
+    transition: background-color 500ms ease;
+    border-radius: 6px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 0px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 0px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.button_sort {
+    display: flex;
+    flex-direction: row;
+}
+
+.button:hover {
+    background-color: #ff4800;
+    -webkit-transition: background-color 500ms ease;
+    -ms-transition: background-color 500ms ease;
+    transition: background-color 500ms ease;
+}
+
+table.blueTable {
+    border: 1px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 40%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.blueTable td, table.blueTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  table.blueTable tbody td {
+    font-size: 13px;
+  }
+  table.blueTable tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+  table.blueTable thead {
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 2px solid #444444;
+  }
+  table.blueTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #D0E4F5;
+  }
+  table.blueTable thead th:first-child {
+    border-left: none;
+  }
+
+
+
+  
