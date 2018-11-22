@@ -61,14 +61,13 @@ body {
 }
 
 .links a:hover {
-    background-color: #444564;
+    background-color: #6b6c8f;
 }
 
 .titel {
     grid-column: 3/5;
     grid-row: 3/4;
     /* background-color: #A3A5E5; */
-    z-index: 0;
     position: relative;
     width: 100%;
 
@@ -93,7 +92,7 @@ body {
 .content {
     grid-column: 3/5;
     grid-row: 5/6;
-    background-color: #b2b78e;
+    background-color: #8e9cb7;
     border-radius: 5px;
     overflow: scroll;
     overflow-x: hidden;
@@ -151,3 +150,36 @@ table.blueTable {
   table.blueTable thead th:first-child {
     border-left: none;
   }
+
+.nav_vereniging {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.knopje {
+    width: 130px;
+    height: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    background-color: #8e91aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 5px 6px #3b3c5cbd;
+}
+
+.knopje:hover {
+    /* box-shadow: none; */
+    /* transform: translate(5,6); */
+
+}

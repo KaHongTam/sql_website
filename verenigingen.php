@@ -26,24 +26,18 @@
         <a href="https://www.nttb.nl"><div class="links_knop">Wedstrijden</div></a>
         
         </div>
-        <div class="nav_vereniging">
-            <a class="knopje" href="vereniging_kapelle.php"><div>Kapelle</div></a>
-            <a class="knopje" href="vereniging_kerkwerve.php"><div>Kerkwerve</div></a>
-            <a class="knopje" href="vereniging_markiezaat.php"><div>Markiezaat</div></a>
-            <a class="knopje" href="vereniging_scaldina.php"><div>Scaldina</div></a>
-            <a class="knopje" href="vereniging_tanaka.php"><div>Tanaka</div></a>
-            <a class="knopje" href="vereniging_tco.php"><div>TCO</div></a>
-        </div>
         <div class="titel">
-            <h2>Dit zijn de spelers van TCO</h2>
+            <h2>Dit zijn alle teams in 2018</h2>
         </div>
         <div class="content">
-        <table class="blueTable">
-    <tr><th>Voornaam</th><th>Achternaam</th><th>Rating</th></tr>
-        <?php
-        include "select_tco.php";
-        ?>
-        </table>
+            <div>
+                <a href="vereniging_kapelle.php">Kapelle</a><br>
+                <a href="vereniging_kerkwerve.php">Kerkwerve</a><br>
+                <a href="vereniging_markiezaat.php">Markiezaat</a><br>
+                <a href="vereniging_scaldina.php">Scaldina</a><br>
+                <a href="vereniging_tanaka.php">Tanaka</a><br>
+                <a href="vereniging_tco.php">TCO</a><br>
+            </div>
         </div>
     </div>
 </div>

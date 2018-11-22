@@ -1,171 +1,184 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-/* div's borders geven */
-div {
-    border-radius: 10px;
+    margin: 0;
+    overflow: hidden;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    /* font-family: 'Muli', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Oxygen', sans-serif; */
 }
 
 .container {
-    height:100vh;
-    width:100vw;
-    padding: 0px;
-    margin: 0px;
+    width: 100%;
+    height: 100vh;
     display: grid;
-    grid-template-columns: 5%  5% 300px 2fr 5%;
-    grid-template-rows: 300px 1fr;
-    background-image: url(images/background.png);
-    background-size: cover;
-    border-radius: 10px;
+    grid-template-columns: 5% 7% 250px 1fr 7% 5%;
+    grid-template-rows: 125px 100px 50px 2% 1fr 3%;
 }
 
-.sideborder_left {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    background-color: white;
-}
-
-.sideborder_right {
-    grid-column: 5/6;
-    grid-row: 1/3;
-    background-color: white;
+.achtergrond {
+    grid-column: 2/6;
+    grid-row: 1/7;
+    /* background-color: #e1e1ee; */
+    z-index: -100;
 }
 
 .logo {
     grid-column: 3/4;
-    grid-row: 1/2;
-    background-color: #ff841fd8;
+    grid-row: 1/3;
+    background-color: #8e91aa;
+    z-index: 0;
+    border-radius: 9px 0px 9px 9px;
+    box-shadow: 2px 3px #494a66;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .links {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    margin: 0;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: #8e91aa;
+    z-index: 0;
+    flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    position: relative;
+    box-shadow: 2px 3px #414266bd;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.links a {
+    width: 33.3%;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+    border-radius: 9px;
+    display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* flex-wrap: wrap; */
-    
+    justify-content: center;
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+}
+
+.links a:hover {
+    background-color: #6b6c8f;
+}
+
+.titel {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    /* background-color: #A3A5E5; */
+    position: relative;
+    width: 100%;
+
+}
+
+.titel h2 {
+    width: 60%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    text-align: center;
+    /* background-color: #A3A5E5; */
+    box-shadow: 3px 4px #626494bd;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
 }
 
 .content {
-    grid-column: 4/5;
-    grid-row: 2/3;
-    background-color: #5dc0b81a;
+    grid-column: 3/5;
+    grid-row: 5/6;
+    background-color: #8e9cb7;
+    border-radius: 5px;
     overflow: scroll;
-    padding: 20px;
-}
-
-.button {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #ff841fd8;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 150px;
-    -webkit-transition: background-color 500ms ease;
-    -ms-transition: background-color 500ms ease;
-    transition: background-color 500ms ease;
-    border-radius: 6px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    border-radius: 0px;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 0px;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-
-.button_sort {
-    display: flex;
-    flex-direction: row;
-}
-
-.button:hover {
-    background-color: #ff4800;
-    -webkit-transition: background-color 500ms ease;
-    -ms-transition: background-color 500ms ease;
-    transition: background-color 500ms ease;
+    overflow-x: hidden;
+    box-shadow: 2px 3px #414266bd;
 }
 
 table.blueTable {
-    border: 1px solid #1C6EA4;
-    background-color: #EEEEEE;
-    width: 40%;
+    /* font-family: Verdana, Geneva, sans-serif; */
+    border: 2px solid #000000;
+    background-color: #898bb1;
+    width: 100%;
+    height: 200px;
     text-align: left;
     border-collapse: collapse;
   }
   table.blueTable td, table.blueTable th {
-    border: 1px solid #AAAAAA;
+    border: 1px solid #4A4A4A;
     padding: 3px 2px;
   }
   table.blueTable tbody td {
-    font-size: 13px;
+    font-size: 17px;
+    color: #153d95;
+    font-weight: bolder;
   }
+
+  .content a {
+      text-decoration: none;
+  }
+
+  .content a:visited {
+      text-decoration: none;
+  }
+
+  .content a:link {
+      text-decoration: none;
+  }
+
   table.blueTable tr:nth-child(even) {
-    background: #D0E4F5;
+    background: #babcff;
   }
   table.blueTable thead {
-    background: #1C6EA4;
-    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    border-bottom: 2px solid #444444;
+    background: #5B5C7F;
+    background: -moz-linear-gradient(top, #84859f 0%, #6b6c8b 66%, #5B5C7F 100%);
+    background: -webkit-linear-gradient(top, #84859f 0%, #6b6c8b 66%, #5B5C7F 100%);
+    background: linear-gradient(to bottom, #84859f 0%, #6b6c8b 66%, #5B5C7F 100%);
+    border-bottom: 3px solid #000000;
   }
   table.blueTable thead th {
     font-size: 15px;
     font-weight: bold;
     color: #FFFFFF;
-    border-left: 2px solid #D0E4F5;
+    text-align: center;
+    border-left: 2px solid #B5B8FF;
   }
   table.blueTable thead th:first-child {
     border-left: none;
   }
 
+.nav_vereniging {
+    grid-column: 4/5;
+    grid-row: 2/3;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+}
 
+.knopje {
+    width: 130px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    background-color: #8e91aa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 5px 6px #3b3c5cbd;
+}
 
-  
+.knopje:hover {
+    background-color: #8587aa;
+    box-shadow: 5px 6px #2a2b42bd;
+}
