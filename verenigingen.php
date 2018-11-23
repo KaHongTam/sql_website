@@ -21,23 +21,30 @@
             </a>
         </div>
         <div class="links">
-        <a href="verenigingen.php"><div class="links_knop">Vereniging</div></a>
-        <a href="spelers.php"><div class="links_knop">Spelers</div></a>
-        <a href="https://www.nttb.nl"><div class="links_knop">Wedstrijden</div></a>
-        
-        </div>
+            <div class="card"><a href="verenigingen.php">
+                <div class="front">Verenigingen</div>
+                <div class="back">Verenigingen</div></a>
+            </div>
+            <div class="card"><a href="spelers.php">
+                <div class="front">Spelers</div>
+                <div class="back">Spelers</div></a>
+            </div>
+            <div class="card"><a href="https://www.nttb.nl">
+                <div class="front">NTTB</div>
+                <div class="back">NTTB</div></a>
+            </div>
+        </div>     
         <div class="titel">
             <h2>Dit zijn alle teams in 2018</h2>
         </div>
         <div class="content">
             <div>
-                <a href="vereniging_kapelle.php">Kapelle</a><br>
-                <a href="vereniging_kerkwerve.php">Kerkwerve</a><br>
-                <a href="vereniging_markiezaat.php">Markiezaat</a><br>
-                <a href="vereniging_scaldina.php">Scaldina</a><br>
-                <a href="vereniging_tanaka.php">Tanaka</a><br>
-                <a href="vereniging_tco.php">TCO</a><br>
-            </div>
+            <a href="vereniging_kapelle.php"><div class="knopje_vereniging">Kapelle</div></a>
+            <a href="vereniging_kerkwerve.php"><div class="knopje_vereniging">Kerkwerve</div></a>
+            <a href="vereniging_markiezaat.php"><div class="knopje_vereniging">Markiezaat</div></a>
+            <a href="vereniging_scaldina.php"><div class="knopje_vereniging">Scaldina</div></a>
+            <a href="vereniging_tanaka.php"><div class="knopje_vereniging">Tanaka</div></a>
+            <a href="vereniging_tco.php"><div class="knopje_vereniging">TCO</div></a>
         </div>
     </div>
 </div>

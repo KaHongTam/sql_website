@@ -21,11 +21,19 @@
             </a>
         </div>
         <div class="links">
-        <a href="verenigingen.php"><div class="links_knop">Vereniging</div></a>
-        <a href="spelers.php"><div class="links_knop">Spelers</div></a>
-        <a href="https://www.nttb.nl"><div class="links_knop">Wedstrijden</div></a>
-        
-        </div>
+            <div class="card"><a href="verenigingen.php">
+                <div class="front">Verenigingen</div>
+                <div class="back">Verenigingen</div></a>
+            </div>
+            <div class="card"><a href="spelers.php">
+                <div class="front">Spelers</div>
+                <div class="back">Spelers</div></a>
+            </div>
+            <div class="card"><a href="https://www.nttb.nl">
+                <div class="front">NTTB</div>
+                <div class="back">NTTB</div></a>
+            </div>
+        </div>     
         <div class="nav_vereniging">
             <a class="knopje" href="vereniging_kapelle.php"><div>Kapelle</div></a>
             <a class="knopje" href="vereniging_kerkwerve.php"><div>Kerkwerve</div></a>
