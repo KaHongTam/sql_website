@@ -33,7 +33,15 @@
                 <div class="front">NTTB</div>
                 <div class="back">NTTB</div></a>
             </div>
-        </div>     
+        </div>
+        <div class="nav_vereniging">
+            <a class="knopje" href="vereniging_kapelle.php"><div>Kapelle</div></a>
+            <a class="knopje" href="vereniging_kerkwerve.php"><div>Kerkwerve</div></a>
+            <a class="knopje" href="vereniging_markiezaat.php"><div>Markiezaat</div></a>
+            <a class="knopje" href="vereniging_scaldina.php"><div>Scaldina</div></a>
+            <a class="knopje" href="vereniging_tanaka.php"><div>Tanaka</div></a>
+            <a class="knopje" href="vereniging_tco.php"><div>TCO</div></a>
+        </div>
         <div class="titel">
             <h2>Dit zijn alle teams in 2018</h2>
         </div>
