@@ -21,40 +21,24 @@
             </a>
         </div>
         <div class="links">
-            <!-- <ul class="block-menu">
-                <li><a href="vereniging.php" class="three-d">
-                    Home
-                    <span aria-hidden="true" class="three-d-box">
-                        <span class="front">Verenigingen</span>
-                        <span class="back">Verenigingen</span>
-                    </span>
-                </a></li>
-                <li><a href="tester.php" class="three-d">
-                    Spelers
-                    <span aria-hidden="true" class="three-d-box">
-                        <span class="front">Spelers</span>
-                        <span class="back">Spelers</span>
-                    </span>
-                </a></li>
-                <li><a href="tester.php" class="three-d">
-                        Wedstrijden
-                        <span aria-hidden="true" class="three-d-box">
-                            <span class="front">Wedstrijden</span>
-                            <span class="back">Wedstrijden</span>
-                        </span>
-                    </a></li>
-            </ul> -->
-        <!-- oude nav -->
-        <a href="verenigingen.php"><div class="links_knop">Vereniging</div></a>
-        <a href="spelers.php"><div class="links_knop">Spelers</div></a>
-        <a href="https://www.nttb.nl"><div class="links_knop">Wedstrijden</div></a>
-        
-        </div>
-        <div class="titel">
-            <h2>Index</h2>
-        </div>
+            <div class="card"><a href="verenigingen.php">
+                <div class="front">Verenigingen</div>
+                <div class="back">Verenigingen</div></a>
+            </div>
+            <div class="card"><a href="spelers.php">
+                <div class="front">Spelers</div>
+                <div class="back">Spelers</div></a>
+            </div>
+            <div class="card"><a href="https://www.nttb.nl">
+                <div class="front">NTTB</div>
+                <div class="back">NTTB</div></a>
+            </div>
+        </div>            
+
         <div class="content">
+        <h1>kalender</h1>
         </div>
     </div>
+</div>
 </body>
 </html>
